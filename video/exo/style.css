@@ -18,7 +18,33 @@ video {
   display: flex;
   flex-direction: column;
 }
-
+.wrapper{
+  position: relative;
+}
+.button{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  border: none;
+  z-index: 99;
+  background: transparent;
+  color: transparent;
+  transition: all ease-in-out 100ms;
+  font-size: 4em;
+}
+.button.active{
+  background: black;
+  opacity: .5;
+  backdrop-filter: blur(2px);
+  color: white;
+}
+#forFive{
+  left: 0;
+}
+#favFive{
+  right: 0;
+}
 .controls {
   visibility: hidden;
   align-self: center;
@@ -29,5 +55,7 @@ video {
   color: white;
   border-radius: 30px;
   font-family: sans-serif;
-  z-index: 2;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
 }

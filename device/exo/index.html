@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/main.js" defer></script>
     <title>Device</title>
+    <style>
+      .wrapperBattery{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+      #battery{
+        height: 20px;
+        width: 50px;
+        border-radius: 100px;
+        border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+      }
+      #batt{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        background: green;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -14,7 +37,14 @@
         <table>
           <tr>
             <td>Level</td>
-            <td id="level"></td>
+            <td class="wrapperBattery">
+              <span id="level"></span>
+              <div id="battery">
+                <div id="batt">
+
+                </div>
+              </div>
+            </td>
           </tr>
           <tr>
             <td>Charging</td>

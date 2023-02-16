@@ -10,10 +10,39 @@
   <body>
     <main>
       <ul>
-        <li>First image</li>
-        <li>Second image</li>
-        <li>Third image</li>
-        <li>Last image</li>
+        <li>
+          <picture>
+            <source srcset="./1-l.jpeg" media="(min-width: 600px)" width="2400" height="1800">
+            <source srcset="./1-m.jpeg" media="(min-width: 1000px)" width="1920" height="1440">
+            <img src="./1-s.jpeg" alt="une belle image" loading="lazy" fetchPriority="high" width="640" height="480">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source srcset="./2-l.jpeg" media="(min-width: 600px)">
+            <source srcset="./2-m.jpeg" media="(min-width: 1000px)">
+            <img src="./2-s.jpeg" alt="une belle image" loading="lazy" fetchPriority="auto">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source srcset="./3-l.jpeg" media="(min-width: 600px)">
+            <source srcset="./3-m.jpeg" media="(min-width: 1000px)">
+            <img src="./3-s.jpeg" alt="une belle image" loading="lazy" fetchPriority="medium">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source srcset="./4-l.jpeg" media="(min-width: 600px)">
+            <source srcset="./4-m.jpeg" media="(min-width: 1000px)">
+            <img src="./4-s.jpeg" alt="une belle image" loading="lazy" fetchPriority="low">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <img src="./keshia.png" alt="une belle image" loading="lazy" fetchPriority="high">
+          </picture>
+        </li>
       </ul>
     </main>
   </body>
